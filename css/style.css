@@ -2057,6 +2057,12 @@ figure figcaption {
   font-size: 1.4rem;
   color: #000; }
 
+@media (min-width: 900px){
+  .PTDesktop{
+    padding-top: 38%;
+  }
+}
+
 /*PRELOADING------------ */
 #overlayer {
   width: 100%;
