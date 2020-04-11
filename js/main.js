@@ -45,7 +45,7 @@ jQuery(document).ready(function($) {
 
     }, 1000);
 
-		$('body').on('click', '.arrow-collapse', function(e) {
+	$('body').on('click', '.arrow-collapse', function(e) {
       var $this = $(this);
       if ( $this.closest('li').find('.collapse').hasClass('show') ) {
         $this.removeClass('active');
@@ -333,4 +333,13 @@ jQuery(document).ready(function($) {
 	  return false;
 	});
 
+});
+
+$(window).scroll(function() {
+	let hasSticky = $('.sticky-wrapper').hasClass('is-sticky');
+    if(hasSticky){
+		$('.sticky-wrapper img')[0].src = './images/logo/logo_horizontal_preto.png';
+	} else {
+		$('.sticky-wrapper img')[0].src = './images/logo/logo_horizontal_branco.png'
+	}
 });
