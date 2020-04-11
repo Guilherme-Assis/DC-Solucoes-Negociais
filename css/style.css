@@ -2131,3 +2131,15 @@ figure figcaption {
    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
    background-color: lightgray;
  }
+
+ div.slide > .mobile-img{
+    display: none;
+ }
+ @media only screen and (max-width: 767px){
+    div.slide > .desk-img{
+      display: none;
+    } 
+   div.slide > .mobile-img{
+      display: block;
+     }
+ }
